@@ -6,5 +6,6 @@
 /tmp/*
 /vendor/bundle
 .byebug_history
+.env
 
 !.keep
