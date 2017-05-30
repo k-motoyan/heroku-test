@@ -1,5 +1,4 @@
 {
-  "image": "heroku/ruby",
   "addons": [
     {
       "plan": "heroku-postgresql:hobby-dev",
@@ -9,16 +8,6 @@
     }
   ],
   "scripts": {
-    "postdeploy": "bundle exec rake db:migrate"
-  },
-  "env": {
-    "SECRET_TOKEN": {
-      "description": "A secret key for verifying the integrity of signed cookies.",
-      "generator": "secret"
-    },
-    "WEB_CONCURRENCY": {
-      "description": "The number of processes to run.",
-      "value": "5"
-    }
+    "postdeploy": "bundle exec rails db:migrate"
   }
 }
