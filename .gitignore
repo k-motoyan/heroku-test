@@ -1,0 +1,10 @@
+/.bundle
+/.vscode
+/db/*.sqlite3
+/db/*.sqlite3-journal
+/log/*
+/tmp/*
+/vendor/bundle
+.byebug_history
+
+!.keep
